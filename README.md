@@ -3,7 +3,7 @@ Basics about GraphQL
 
 Este proyecto ofrece una introducción clara y sencilla a GraphQL, un lenguaje de consulta para API que permite a los desarrolladores obtener datos de manera más eficiente y precisa. A través de ejemplos simples y explicaciones concisas, este repositorio proporciona una guía básica para comprender qué es GraphQL y cómo se puede utilizar en el desarrollo de aplicaciones web y móviles.
 
-Contenido:  
+Contenido:   
 
 
 
