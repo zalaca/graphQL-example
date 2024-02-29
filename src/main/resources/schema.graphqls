@@ -1,0 +1,14 @@
+type Product {
+    id: ID
+    name: String
+    price: Float
+}
+
+type Query {
+    getAllProducts: [Product]
+}
+
+query {
+    welcomeMessage
+}
+

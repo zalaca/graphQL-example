@@ -29,3 +29,13 @@ Características Principales de GraphQL
     -Introspección: GraphQL proporciona capacidades de introspección para explorar y descubrir el esquema de la API en tiempo de ejecución.
 
     -Versionado simplificado: Al permitir a los clientes solicitar solo los campos necesarios, GraphQL facilita la evolución del esquema de la API sin romper las versiones anteriores.
+
+
+
+Ejemplo de peticion
+    
+        http://localhost:8080/graphql    
+
+        {
+            "query": "{ getAllProducts { id price } }"
+        }
