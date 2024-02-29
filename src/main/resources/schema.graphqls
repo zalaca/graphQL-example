@@ -5,10 +5,9 @@ type Product {
 }
 
 type Query {
-    getAllProducts: [Product]
+    getAllProducts: [Product],
+    getProductById(id: ID!): Product
 }
 
-query {
-    welcomeMessage
-}
+
 

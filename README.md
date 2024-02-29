@@ -39,3 +39,8 @@ Ejemplo de peticion
         {
             "query": "{ getAllProducts { id price } }"
         }
+
+        {
+            "query": "{ getProductById(id: 1) { id name price } }"
+        }
+

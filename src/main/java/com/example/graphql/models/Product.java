@@ -1,5 +1,8 @@
 package com.example.graphql.models;
 
+import lombok.Getter;
+
+@Getter
 public class Product {
     private String id;
     private String name;
