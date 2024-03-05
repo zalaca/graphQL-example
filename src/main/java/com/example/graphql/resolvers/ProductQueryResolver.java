@@ -41,4 +41,10 @@ public class ProductQueryResolver implements GraphQLQueryResolver {
         return result;
     }
 
+    //Overcharged method to test when uncommenting getAllProductsFilteredByActive from schema
+    public List<Product> getAllProductsFilteredByActive() {
+
+        return List.of(new Product("1", "Overcharging", 999.0, true));
+    }
+
 }

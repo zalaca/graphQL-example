@@ -13,6 +13,7 @@ type Site {
 type Query {
     getAllProducts: [Product],
     getAllProductsFilteredByActive(isActive: Boolean): [Product],
+    # getAllProductsFilteredByActive: [Product],
     getProductById(id: ID!): Product,
     getAllSites: [Site],
     getSiteById(id: ID!): Site
