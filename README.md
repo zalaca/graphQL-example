@@ -45,7 +45,15 @@ Ejemplo de peticion
         }
 
         {
-        "query": " {  getAllProducts { id price name } getAllSites { id description } }"
+            "query": " {  getAllProducts { id price name } getAllSites { id description } }"
+        }
+
+        {
+            "query": "{ getAllProductsFilteredByActive(isActive: true) { id name price active } }"
+        }
+
+        {
+            "query": "{ getAllProductsFilteredByActive { id name price active } }"
         }
 
 

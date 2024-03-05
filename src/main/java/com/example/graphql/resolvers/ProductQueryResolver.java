@@ -11,9 +11,9 @@ import java.util.List;
 public class ProductQueryResolver implements GraphQLQueryResolver {
 
     private final List<Product> products = Arrays.asList(
-            new Product("1", "Laptop", 1000.00),
-            new Product("2", "Smartphone", 800.00),
-            new Product("3", "Tablet", 500.00)
+            new Product("1", "Laptop", 1000.00, true),
+            new Product("2", "Smartphone", 800.00, true),
+            new Product("3", "Tablet", 500.00, false)
     );
 
     public List<Product> getAllProducts() {
@@ -29,4 +29,16 @@ public class ProductQueryResolver implements GraphQLQueryResolver {
         }
         return result;
     }
+
+    public List<Product> getAllProductsFilteredByActive(Boolean isActive) {
+
+        List<Product> result = products;
+
+        if(isActive!=null){
+            result = result.stream().filter(product -> product.getActive().equals(isActive)).toList();
+        }
+
+        return result;
+    }
+
 }

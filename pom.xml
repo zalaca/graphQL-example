@@ -43,7 +43,6 @@
       <version>${graphql-java-kickstart.version}</version>
     </dependency>
 
-
     <dependency>
       <groupId>com.graphql-java</groupId>
       <artifactId>graphql-java-extended-scalars</artifactId>
