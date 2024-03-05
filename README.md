@@ -44,3 +44,8 @@ Ejemplo de peticion
             "query": "{ getProductById(id: 1) { id name price } }"
         }
 
+        {
+        "query": " {  getAllProducts { id price name } getAllSites { id description } }"
+        }
+
+

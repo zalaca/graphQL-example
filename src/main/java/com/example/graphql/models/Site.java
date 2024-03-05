@@ -1,6 +1,5 @@
 package com.example.graphql.models;
 
-
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.Setter;
@@ -8,9 +7,9 @@ import lombok.Setter;
 @Getter
 @Setter
 @AllArgsConstructor
-public class Product {
+public class Site {
+
     private String id;
-    private String name;
-    private double price;
+    private String description;
 
 }

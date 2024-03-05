@@ -4,9 +4,16 @@ type Product {
     price: Float
 }
 
+type Site {
+    id: ID
+    description: String
+}
+
 type Query {
     getAllProducts: [Product],
-    getProductById(id: ID!): Product
+    getProductById(id: ID!): Product,
+    getAllSites: [Site],
+    getSiteById(id: ID!): Site
 }
 
 
