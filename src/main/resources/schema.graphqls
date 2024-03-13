@@ -8,6 +8,7 @@ type Product {
 type Site {
     id: ID
     description: String
+    products: [Product]
 }
 
 type Query {
@@ -16,7 +17,8 @@ type Query {
     # getAllProductsFilteredByActive: [Product],
     getProductById(id: ID!): Product,
     getAllSites: [Site],
-    getSiteById(id: ID!): Site
+    getSiteById(id: ID!): Site,
+    getProductsBySiteId(siteId: ID!): [Product]
 }
 
 
