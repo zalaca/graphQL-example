@@ -1,12 +1,8 @@
 # graphQL-example
-Basics about GraphQL
 
-    Este proyecto ofrece una introducción clara y sencilla a GraphQL, un lenguaje de consulta para API que permite a los desarrolladores 
-    obtener datos de manera más eficiente y precisa. A través de ejemplos simples y explicaciones concisas, este repositorio proporciona una 
-    guía básica para comprender qué es GraphQL y cómo se puede utilizar en el desarrollo de aplicaciones web y móviles.
-
-Contenido:     
-
+Este proyecto ofrece una introducción clara y sencilla a GraphQL, un lenguaje de consulta para API que permite a los desarrolladores 
+obtener datos de manera más eficiente y precisa. A través de ejemplos simples y explicaciones concisas, este repositorio proporciona una 
+guía básica para comprender qué es GraphQL y cómo se puede utilizar en el desarrollo de aplicaciones web y móviles.
 
 
 ¿Qué es GraphQL?
@@ -16,7 +12,6 @@ Contenido:
     GraphQL permite a los clientes solicitar solo los campos específicos que desean de los recursos disponibles.
     Esto significa que los clientes pueden obtener exactamente lo que necesitan en una sola solicitud, evitando así la sobrecarga de 
     solicitudes múltiples o la sobrecarga de datos innecesarios.
-
 
 
 Características Principales de GraphQL
@@ -74,3 +69,20 @@ Ejemplo de peticion
         }
 
 
+# PIEZAS
+
+schema.graphql:
+
+      -Este archivo es fundamental en GraphQL, ya que actúa como un contrato entre el cliente y el servidor.
+      -Define los tipos de datos que se pueden consultar y las operaciones que se pueden realizar en el servidor GraphQL.
+      -En este archivo, se especifican los tipos de objetos que se pueden recuperar del servidor y las operaciones que se pueden realizar en esos objetos. Por ejemplo, pueden definirse tipos de objetos como Usuario, Producto, Pedido, etc.
+      -También se definen las relaciones entre los diferentes tipos de objetos, como las relaciones uno a muchos o muchos a muchos.
+      -Además, se definen las consultas, mutaciones y sus argumentos. Las consultas son operaciones para recuperar datos del servidor, mientras que las mutaciones son operaciones para modificar o agregar datos en el servidor.
+
+Resolvers:
+
+      -Los resolvers son funciones que implementan la lógica para cada campo definido en el schema.
+      -Cada campo en el schema tiene un resolver asociado que se encarga de proporcionar los datos solicitados cuando se realiza una consulta GraphQL.
+      -Por ejemplo, si en el schema se tiene un campo usuarios, se debe implementar un resolver para ese campo que devuelva una lista de usuarios.
+      -Los resolvers pueden obtener los datos de diferentes fuentes, como bases de datos, servicios REST, sistemas de archivos, etc. También pueden realizar cálculos o transformaciones en los datos antes de devolverlos al cliente.
+      -Es común tener un resolver para cada campo en el schema, pero también se pueden definir resolvers más complejos para resolver consultas más elaboradas o personalizadas.
