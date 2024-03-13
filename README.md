@@ -68,6 +68,14 @@ Ejemplo de peticion
             "query": "{ getAllProductsFilteredByActive { id name price active } }"
         }
 
+        {
+            "query": "{ getProductsBySiteId(siteId: 1) { id name price } }"
+        }
+
+        {
+            "query": "{ getAllSites { id description products { id name price active } } }"
+        }
+
 
 # PIEZAS
 
